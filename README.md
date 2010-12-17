@@ -5,7 +5,7 @@ This python-gowalla library is a thin layer that exposes Gowalla's API. Although
 
 ##Usage
 
-See **gowallatest.py** for example usage.
+See **tests.py** for example usage. Create test_settings.py defining USERNAME, PASSWORD and API\_KEY to run tests.
 
 
 ##Documentation

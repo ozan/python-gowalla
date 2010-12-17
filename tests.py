@@ -26,10 +26,8 @@ import types
 
 from gowalla import Gowalla, GowallaException
 
+from test_settings import USERNAME, PASSWORD, API_KEY
 
-USERNAME = ''
-PASSWORD = ''
-API_KEY = ''
 
 TEST_USERNAME = 'xeeton'
 TEST_SPOT_ID = '48462'
