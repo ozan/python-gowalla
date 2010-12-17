@@ -109,7 +109,7 @@ class Gowalla(object):
             args = "?%s" % (urllib.urlencode(kwargs.items()))
         
         # Build url from the pieces
-        url = "%s%s%s" % (URL, '/'.join(urili), args)
+        url = "%s%s%s" % (URL, '/'.join(str(u) for u in urili), args)
         
         # Build request with our new url, method, and data
         opener = urllib2.build_opener(urllib2.HTTPHandler)
