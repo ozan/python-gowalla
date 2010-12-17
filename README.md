@@ -34,11 +34,10 @@ Returns a list of the user's friends. Excepts username or user id. **This curren
 	/users/USERNAME/friends
 
 
-###List User's Vaulted Items
-Returns a list of the user's vaulted items. Excepts username or user id.
+###Get User's Items
+Returns a dictionary including a list of the user's items. 
 
-	/users/USER_ID/vault
-	/users/USERNAME/vault
+	/users/USERNAME/items
 
 
 ###Get Spot
@@ -53,8 +52,8 @@ Returns information on a Gowalla spot.
 	/spots/SPOT_ID?lat=LATITUDE&lng=LONGITUDE&radius=RADIUS
 
 
-###List Spot's Items
-Returns a list of the items at a Gowalla spot.
+###Get Spot's Items
+Returns a dictionary including a list of the items at a Gowalla spot.
 
 	/spots/SPOT_ID/items
 
@@ -75,12 +74,6 @@ Returns information on a Gowalla trip.
 Returns information on a Gowalla item.
 
 	/items/ITEM_ID
-
-
-###List Items
-Returns a list of all Gowalla items.
-
-	/items
 
 
 ###List Item's Events
