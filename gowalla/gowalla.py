@@ -26,7 +26,16 @@ import urllib
 import urllib2
 from urllib2 import URLError, HTTPError
 
-import simplejson
+try:
+    import json # Python 2.6 +
+except ImportError:
+    try:
+        import simplejson as json
+    except ImportError:
+        try:
+            from django.utils import simplejson as json # Django and GAE
+        except ImportError:
+            raise ImportError, "Can't load a json library"
 
 
 URL = 'http://gowalla.com'
@@ -134,7 +143,7 @@ class Gowalla(object):
         except URLError, e:
             raise GowallaConnectionException(e)
                 
-        self.response = simplejson.loads(json_response)
+        self.response = json.loads(json_response)
                         
         return self.response
 
