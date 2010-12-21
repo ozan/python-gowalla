@@ -47,9 +47,8 @@ Returns information on a Gowalla spot.
 
 
 ###List Spots Near Longitude/Latitude
-Returns information on a Gowalla spot.
 
-	/spots/SPOT_ID?lat=LATITUDE&lng=LONGITUDE&radius=RADIUS
+	/spots?lat=LATITUDE&lng=LONGITUDE&radius=RADIUS
 
 
 ###Get Spot's Items
